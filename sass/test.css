@@ -1,0 +1,61 @@
+/*Import fonts*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+/* Import Colour Variables */
+.dropdown {
+  /* Border */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  /* Reset list styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown img {
+  height: 10px;
+  width: 10px;
+}
+
+.dropdown li {
+  /* Spacing */
+  padding: 8px;
+  /* Used to position the sub dropdown */
+  position: relative;
+}
+
+/* The sub dropdown */
+.dropdown ul {
+  /* Border */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* Hidden by default */
+  display: none;
+  /* Absolute position */
+  transform: translateY(-1%);
+  position: absolute;
+  left: 100%;
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* Width */
+  width: 200px;
+}
+
+/* The second level sub dropdown */
+.dropdown ul ul {
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.dropdown li:hover {
+  background-color: #BB00DA;
+  color: #fff;
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+  display: block;
+  color: black;
+}/*# sourceMappingURL=test.css.map */
